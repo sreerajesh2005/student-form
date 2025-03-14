@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <center>
+        <h1>STUDENT REGISTRATION FORM</h1>
+    <!-- </center> -->
+    <form>
+        <table class="form">
+            <tr class="label1">
+                <th>FIRST NAME</th>
+                <td> <input type="text" required>(max 30 characters a-z and A-Z)</td>
+            </tr> 
+            <tr class="label2">
+                <th>DATE OF BIRTH</th>
+                <td> <input type="date" name="date"></td>
+            </tr>
+            <tr class="label3">
+                <th>EMAIL ID</th>
+                <td><input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}" required></td>
+            </tr>
+            <tr class="label4">
+                <th>MOBILE NUMBER</th>
+                <td><input type="number" name="contact">(10 Digits numbers)</td>
+            </tr>
+            <tr class="label5">
+                <th>GENDER</th>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr class="label6">
+                <th>ADDRESS</th>
+                <td><textarea name="ADDRESS" rows="3"></textarea></td>
+            </tr>
+            <tr class="label7">
+                <th>STATE</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr class="label8">
+                <th>COUNTRY</th>
+                <td><input type="text" placeholder="India"></td>
+            </tr>
+            <tr class="label9">
+                <th>HOBBIES</th>
+                <td>
+                    <input type="checkbox" name="hobbies">Drawing
+                    <input type="checkbox" name="hobbies">Singing
+                    <input type="checkbox" name="hobbies">Dancing
+                    <input type="checkbox" name="hobbies">Sketching
+                    <input type="checkbox" name="hobbies">Other
+                    <input type="text" >
+            </tr>
+            <tr class="label10">
+                <th>QUALIFICATION</th>
+                <td>
+                    <table>
+                        <tr>
+                            <th>S.NO</th>
+                            <th>EXAMINATION</th>
+                            <th>BOARD</th>
+                            <th>PERCENTAGE</th>
+                            <th>YEAR OF PASSING</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>B.Sc</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>M.Sc</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="label11">
+                <th>COURSE APPLIED FOR BCA</th>
+                <td>
+                    <input type="radio" name="course" value="BCA">B.C.A
+                    <input type="radio" name="course" value="BCOM">B.COM
+                    <input type="radio" name="course" value="BSC">BSC.CS
+                    <input type="radio" name="course" value="OTHER">OTHERS
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+        <div class="label12">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+    </center>
+</body>
+</html>
